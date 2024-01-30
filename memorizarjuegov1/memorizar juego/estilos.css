@@ -1,0 +1,154 @@
+
+/* animacion de fondo en colores*/
+@keyframes danceAnimation {
+    0% {
+      background-position: 0% 0%;
+    }
+    5% {
+      background-position: 100% 75%;
+    }
+    10% {
+      background-position: 0% 100%;
+    }
+    15% {
+      background-position: 50% 0%;
+    }
+    20% {
+      background-position: 75% 100%;
+    }
+    25% {
+      background-position: 0% 50%;
+    }
+    30% {
+      background-position: 100% 0%;
+    }
+    35% {
+      background-position: 0% 100%;
+    }
+    40% {
+      background-position: 0% 0%;
+    }
+    45% {
+      background-position: 100% 0%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    55% {
+      background-position: 0% 0%;
+    }
+    60% {
+      background-position: 50% 100%;
+    }
+    65% {
+      background-position: 100% 0%;
+    }
+    70% {
+      background-position: 50% 75%;
+    }
+    75% {
+      background-position: 0% 100%;
+    }
+    80% {
+      background-position: 0% 0%;
+    }
+    85% {
+      background-position: 50% 100%;
+    }
+    90% {
+      background-position: 100% 50%;
+    }
+    95% {
+      background-position: 25% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+
+body{
+   /* background-image: url(images/bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;*/
+    /*inicio del fondo en colores con su tamaño */
+    background: radial-gradient(circle, rgb(255, 0, 0),rgb(255, 98, 0), rgb(255, 174, 0));
+    background-size: 320% 320%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    animation: danceAnimation 200s ease-in-out infinite;
+}
+/*menu principal estilos*/
+main{
+    width: 730px;
+    display: flex;
+    margin: 100px auto 50px;
+    align-items: center;
+
+}
+/*inicio de estilos en los botones y tarjetas */
+.parte1{
+    background-color: rgba(255,255,255,0.2,);
+    padding: 0 10px 10px 10px;
+    border-radius: 8px;
+    
+}
+h1{
+    text-align: center;
+}
+
+button{
+    height: 100px;
+    width: 100px;
+    font-size: 40px;
+    color: white;
+    font-size: bold;
+}
+
+button:hover{
+cursor: pointer;
+
+}
+/*inicio de estilos en informacion de las estadisticas*/
+.parte2{
+    background-color: rgba(255,255,255,0.2,);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 250px;
+    height: 400px;
+    padding: 0 20px;
+
+}
+.estadisticas{
+    border: 1px solid white;
+    height: 105px;
+    border-radius: 8px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+}
+/*finalizacion de la pagina donde lleva el boton de play again */
+footer{
+    text-align: center;
+    text-decoration: none;
+}
+.play{
+    background-color: red;
+    width: auto;
+    height: 30px;
+    
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    box-shadow: 3px solid white;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    font: bold;
+    color: white;
+}
+/*tamaño de imagenes*/
+img{
+    width: 80%;
+}
