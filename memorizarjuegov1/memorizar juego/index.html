@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Video juego en javascript que consiste en generar parejas del mismo simbolo ">
+    <meta name="keywords" content="Juego, javascript, HTML, CSS, JS, logica">
+    <meta name="autor" content="Sergio Parra">
+    <meta name="memorizar" content="index, couples">
+    <link rel="icon" href="images/icons8-cubo-de-rubik-94.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <!-- titulo del juego en la pestaña -->
+    <title>Videojuego en Js(Memoria)</title>
+    
+</head>
+<!-- inicio de la estructura del juego  -->
+<body>
+    
+    <main>
+        <section class="parte1">
+            <!-- titulo del juego -->
+            <h1>Juego De Memoria Diseñado Por Chechis</h1>
+            <!-- inicio de las tablas que guardan los botones a generar el cambio con las imagenes  -->
+                <table>
+                    <tr>
+                        <td><button id = "0" onclick="destapar(0)"></button></td>
+                        <td><button id = "1" onclick="destapar(1)"></button></td>
+                        <td><button id = "2" onclick="destapar(2)"></button></td>
+                        <td><button id = "3" onclick="destapar(3)"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button id = "4" onclick="destapar(4)"></button></td>
+                        <td><button id = "5" onclick="destapar(5)"></button></td>
+                        <td><button id = "6" onclick="destapar(6)"></button></td>
+                        <td><button id = "7" onclick="destapar(7)"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button id = "8" onclick="destapar(8)"></button></td>
+                        <td><button id = "9" onclick="destapar(9)"></button></td>
+                        <td><button id = "10" onclick="destapar(10)"></button></td>
+                        <td><button id = "11" onclick="destapar(11)"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button id = "12" onclick="destapar(12)"></button></td>
+                        <td><button id = "13" onclick="destapar(13)"></button></td>
+                        <td><button id = "14" onclick="destapar(14)"></button></td>
+                        <td><button id = "15" onclick="destapar(15)"></button></td>
+                    </tr>
+                </table>
+                
+        </section>
+        <!-- inicio de la seccion donde muestra la informacion del juego en sus estadisticas -->
+        <section class="parte2">
+            <h2 id ="aciertos" class="estadisticas">Aciertos: 0</h2>
+            <h2 id ="t-restante" class="estadisticas">Tiempo: 30 segundos</h2>
+            <h2 id ="movimientos" class="estadisticas">Movimientos: 0</h2>
+
+        </section>
+    </main>
+    <!-- indica el final de la pagina y de su boton de reinico -->
+    <footer>
+        <script src="javascript.js"></script>
+        <button class="play"><a href="index.html">Play Again</a></button>
+        <p>Programa desarrollado por Chechito Games</p>
+    </footer>
+    
+</body>
+</html>
